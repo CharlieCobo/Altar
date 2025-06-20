@@ -1,1 +1,8 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+body {
+    @apply dark:bg-gray-900;
+}
+#root {
+  height: 100dvh;
+}
