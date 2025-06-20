@@ -1,5 +1,5 @@
 @reference "tailwindcss";
 
 .header {
-    @apply md:h-20 dark:bg-gray-900 dark:text-white;
+    @apply md:h-20 dark:bg-gray-800 dark:text-white shadow border-b dark:border-gray-600;
 }

@@ -1,0 +1,9 @@
+@reference "tailwindcss";
+
+.menu {
+    @apply dark:bg-gray-800 dark:text-white shadow absolute -translate-x-full transition z-10 top-0 left-0 opacity-0;
+}
+
+.menu-open {
+    @apply translate-none flex-[0_0_18%] relative opacity-100;
+}

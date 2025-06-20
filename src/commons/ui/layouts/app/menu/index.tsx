@@ -1,8 +1,20 @@
 import { Link } from 'react-router';
 
+import styles from './styles.module.css';
+import { useMenu } from '../../../hooks/use-menu';
+import { clsx } from '../../../../core/utils/clsx';
+import { useAutoAnimate } from '@formkit/auto-animate/react';
+
 export const Menu = () => {
+  const open = useMenu(state => state.open);
+  const [parent] = useAutoAnimate();
+
+  const menuStyle = clsx(styles['menu'], {
+    [styles['menu-open']]: open,
+  });
+
   return (
-    <aside>
+    <aside className={menuStyle} ref={parent}>
       <nav>
         <ul>
           <li>

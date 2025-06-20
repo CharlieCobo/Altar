@@ -1,0 +1,9 @@
+@reference "tailwindcss";
+
+.content {
+    @apply flex relative;
+}
+
+.main {
+    @apply flex-1;
+}

@@ -5,6 +5,8 @@ import autoAnimate from '@formkit/auto-animate';
 import { Header } from './header';
 import { Menu } from './menu';
 
+import styles from './styles.module.css';
+
 export default () => {
   const parent = useRef(null);
 
@@ -15,10 +17,12 @@ export default () => {
   return (
     <>
       <Header />
-      <Menu />
-      <main ref={parent}>
-        <Outlet />
-      </main>
+      <div className={styles['content']}>
+        <Menu />
+        <main ref={parent} className={styles['main']}>
+          <Outlet />
+        </main>
+      </div>
     </>
   );
 };

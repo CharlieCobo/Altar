@@ -1,5 +1,3 @@
 export default () => {
-    return (
-        <h1>Crews List Page</h1>
-    )
-}
+  return <h1 className="text-white">Crews List Page</h1>;
+};
